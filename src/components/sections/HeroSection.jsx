@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
+import { H1, MediumText } from "../styles/TextStyles"
+import { themes } from "../styles/ColorStyles"
 
 const HeroSection = () => {
   return (
@@ -39,16 +40,8 @@ const TextWrapper = styled.div`
   gap: 30px;
 `
 
-const Title = styled.div`
-  /* font-family: SF Pro Display;
-  font-style: normal; */
-  font-weight: bold;
-  font-size: 60px;
-  color: white;
-  /* line-height: 72px; */
+const Title = styled(H1)`
+  color: ${themes.dark.text1};
 `
 
-const Description = styled.div`
-  font-size: 17px;
-  line-height: 130%;
-`
+const Description = styled(MediumText)``
